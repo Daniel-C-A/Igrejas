@@ -34,7 +34,7 @@ while opção !=6:
     if opção == 1:
         print ('-' * 28, 'OK', '-' * 28)
         sleep (1)
-    if opção == 2:
+    elif opção == 2:
         print ('\nFinalizando!')
         sleep (1)
         print('\nBom Trabalho!')
@@ -42,7 +42,7 @@ while opção !=6:
         sleep (1)
         break
     else:
-        print('Digite 1 para Continuar e 2 para Sair! ')
+            print('Opção Inválida, Digite 1 para Continuar ou 2 para Sair! \n')
     print('=' * 25, 'Despesas', '=' * 25)
     
          
