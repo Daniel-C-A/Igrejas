@@ -42,7 +42,7 @@ while opção !=6:
         sleep (1)
         break
     else:
-            print('Opção Inválida, Digite 1 para Continuar ou 2 para Sair! \n')
+        print('Opção Inválida, Digite 1 para Continuar ou 2 para Sair! \n')
     print('=' * 25, 'Despesas', '=' * 25)
     
          
