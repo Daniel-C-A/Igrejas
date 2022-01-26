@@ -20,41 +20,83 @@ while opção !=6:
     #Dízimos
     if opção == 1:
         sleep (1)
-    descrição = str.upper(input('\nDigite o Nome da Receita: '))   
-    receita = float(input('\nDigite o Valor da Receita R$ '))
-    print(f'\nDescrição {descrição}\nValor R$ {receita} \nLançada {data}')
-    sleep (1)
-    print('=' *60) 
-    sleep(1) 
-    print('Deseja continuar Lançando Receitas?')
-
-    while opção !='N':
-        print('''
-        ['S'] Sim
-        ['N'] Não ''')
+        descrição = str.upper(input('\nDigite o Nome da Receita: '))   
+        receita = float(input('\nDigite o Valor da Receita R$ '))
+        print(f'\nDescrição {descrição}\nValor R$ {receita} \nLançada {data}')
         sleep (1)
-        opção = str.upper(input('\nEscolha uma Opção Válida: '))
+        print('=' *60) 
+        sleep(1) 
+        print('Deseja continuar Lançando Receitas?')
+    
+    if opção == 2:
+        sleep (1)
+        descrição = str.upper(input('\nDigite o Nome da Receita: '))
+        oferta = float(input('\nDigite o Valor da Oferta R$ '))
+        print(f'\nDescrição {descrição}\nValor R$ {oferta} \nLançada {data}')
+        sleep(1)
+        print('=' *60) 
+        sleep(1) 
+        print('Deseja continuar Lançando Receitas?')
+
+    if opção == 3:
+        sleep (1)
+        descrição = str.upper(input('\nDigite o Nome da Receita: '))
+        oferta = float(input('\nDigite o Valor da Oferta Especial R$ '))
+        print(f'\nDescrição {descrição}\nValor R$ {oferta} \nLançada {data}')
+        sleep(1)
+        print('=' *60) 
+        sleep(1) 
+        print('Deseja continuar Lançando Receitas?')
+
+    if opção == 4:
+        sleep (1)
+        descrição = str.upper(input('\nDigite o Nome da Receita: '))
+        missões = float(input('\nDigite o Valor da Oferta de Missões R$ '))
+        print(f'\nDescrição {descrição}\nValor R$ {missões} \nLançada {data}')
+        sleep(1)
+        print('=' *60) 
+        sleep(1) 
+        print('Deseja continuar Lançando Receitas?')
+
+    if opção == 5:
+        sleep (1)
+        descrição = str.upper(input('\nDigite o Nome da Receita: '))
+        campanha = float(input('\nDigite o Valor da Oferta de Campanha R$ '))
+        print(f'\nDescrição {descrição}\nValor R$ {campanha} \nLançada {data}')
+        sleep(1)
+        print('=' *60) 
+        sleep(1) 
+        print('Deseja continuar Lançando Receitas?')
+    
+    if opção == 6:
+        print('Finalizando!\n')
+        sleep (1)
+        print('\nMuito Obrigado!')
+        print('=' * 25, 'Receitas', '=' * 25)
+        break 
+
+    else:
+        print('Opção Invalida! Quer Continuar? ') 
+
+        while opção !='N':
+            print('''
+            ['S'] Sim
+            ['N'] Não ''')
+            sleep (1)
+            opção = str.upper(input('\nEscolha uma Opção Válida: '))
+            break
 
         if opção == 'S':
             print ('-' * 28, 'OK', '-' * 28)
             sleep (1)
-            break
 
-    if opção == 'N':
+        if opção == 'N':
             print ('\nFinalizando!')
             sleep (1)
             print('\nBom Trabalho!')
             print('-' * 60)
             sleep (1)
-            break
-
-
-else:
-    print('Opção Inválida, Digite 1 para Continuar ou 2 para Sair! \n')
-print('=' * 25, 'Receitas', '=' * 25)  
-
-
-        
+            break  
 
     #Ofertas
     
