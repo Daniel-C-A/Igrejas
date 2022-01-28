@@ -25,9 +25,27 @@ while opção !=6:
         print(f'\nDescrição {descrição}\nValor R$ {receita} \nLançada {data}')
         sleep (1)
         print('=' *60) 
-        sleep(1) 
-        print('Deseja continuar Lançando Receitas?')
+        sleep(1)
+#-------------------------------------------------------------------------------
+        #While Dizimos
+        while opção != 'N':
+            print('Continuar Lançando Receitas?')
+            print('''
+            [S] Sim
+            [N] Não ''')
+            sleep (1)
+            opção = str.upper(input('\nEscolha uma Opção Válida: '))
     
+            if opção == 'S':
+                print ('-' * 28, 'OK', '-' * 28)
+                sleep (1)
+                break  
+
+        else:
+            print('Saindo! Muito Obrigado!')
+            break
+#-------------------------------------------------------------------------------  
+
     if opção == 2:
         sleep (1)
         descrição = str.upper(input('\nDigite o Nome da Receita: '))
@@ -35,9 +53,27 @@ while opção !=6:
         print(f'\nDescrição {descrição}\nValor R$ {oferta} \nLançada {data}')
         sleep(1)
         print('=' *60) 
-        sleep(1) 
-        print('Deseja continuar Lançando Receitas?')
+        sleep(1)
+#-------------------------------------------------------------------------------
+        #while Ofertas
+        while opção != 'N':
+            print('Continuar Lançando Receitas?')
+            print('''
+            [S] Sim
+            [N] Não ''')
+            sleep (1)
+            opção = str.upper(input('\nEscolha uma Opção Válida: '))
+    
+            if opção == 'S':
+                print ('-' * 28, 'OK', '-' * 28)
+                sleep (1)
+                break  
 
+        else:
+            print('Saindo! Muito Obrigado!')
+            break
+
+#-------------------------------------------------------------------------------
     if opção == 3:
         sleep (1)
         descrição = str.upper(input('\nDigite o Nome da Receita: '))
@@ -45,8 +81,26 @@ while opção !=6:
         print(f'\nDescrição {descrição}\nValor R$ {oferta} \nLançada {data}')
         sleep(1)
         print('=' *60) 
-        sleep(1) 
-        print('Deseja continuar Lançando Receitas?')
+        sleep(1)
+#--------------------------------------------------------------------------------
+        #While Oferta Especial
+        while opção != 'N':
+            print('Continuar Lançando Receitas?')
+            print('''
+            [S] Sim
+            [N] Não ''')
+            sleep (1)
+            opção = str.upper(input('\nEscolha uma Opção Válida: '))
+    
+            if opção == 'S':
+                print ('-' * 28, 'OK', '-' * 28)
+                sleep (1)
+                break  
+
+        else:
+            print('Saindo! Muito Obrigado!')
+            break
+#--------------------------------------------------------------------------------        
 
     if opção == 4:
         sleep (1)
@@ -55,8 +109,27 @@ while opção !=6:
         print(f'\nDescrição {descrição}\nValor R$ {missões} \nLançada {data}')
         sleep(1)
         print('=' *60) 
-        sleep(1) 
-        print('Deseja continuar Lançando Receitas?')
+        sleep(1)
+
+#--------------------------------------------------------------------------------
+        #While Missões
+        while opção != 'N':
+            print('Continuar Lançando Receitas?')
+            print('''
+            [S] Sim
+            [N] Não ''')
+            sleep (1)
+            opção = str.upper(input('\nEscolha uma Opção Válida: '))
+    
+            if opção == 'S':
+                print ('-' * 28, 'OK', '-' * 28)
+                sleep (1)
+                break  
+
+        else:
+            print('Saindo! Muito Obrigado!')
+            break
+#--------------------------------------------------------------------------------           
 
     if opção == 5:
         sleep (1)
@@ -66,37 +139,33 @@ while opção !=6:
         sleep(1)
         print('=' *60) 
         sleep(1) 
-        print('Deseja continuar Lançando Receitas?')
+
+#--------------------------------------------------------------------------------
+        #While Campanha
+        while opção != 'N':
+            print('Continuar Lançando Receitas?')
+            print('''
+            [S] Sim
+            [N] Não ''')
+            sleep (1)
+            opção = str.upper(input('\nEscolha uma Opção Válida: '))
     
+            if opção == 'S':
+                print ('-' * 28, 'OK', '-' * 28)
+                sleep (1)
+                break  
+
+        else:
+            print('Saindo! Muito Obrigado!')
+            break
+#--------------------------------------------------------------------------------
+
     if opção == 6:
         print('Finalizando!\n')
         sleep (1)
         print('\nMuito Obrigado!')
         print('=' * 25, 'Receitas', '=' * 25)
-        break 
 
     else:
-        print('Opção Invalida! Quer Continuar? ') 
-
-        while opção !='N':
-            print('''
-            ['S'] Sim
-            ['N'] Não ''')
-            sleep (1)
-            opção = str.upper(input('\nEscolha uma Opção Válida: '))
-            break
-
-        if opção == 'S':
-            print ('-' * 28, 'OK', '-' * 28)
-            sleep (1)
-
-        if opção == 'N':
-            print ('\nFinalizando!')
-            sleep (1)
-            print('\nBom Trabalho!')
-            print('-' * 60)
-            sleep (1)
-            break  
-
-    #Ofertas
-    
+        print('Essa Opção é Inválida!')
+         
