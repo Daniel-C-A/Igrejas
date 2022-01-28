@@ -16,7 +16,7 @@ while opção !=6:
     [6] Sair! ''')
     sleep (1)
     opção = int(input('\nEscolha uma Opção Válida: '))
-
+#-------------------------------------------------------------------------------
     #Dízimos
     if opção == 1:
         sleep (1)
@@ -26,7 +26,7 @@ while opção !=6:
         sleep (1)
         print('=' *60) 
         sleep(1)
-#-------------------------------------------------------------------------------
+
         #While Dizimos
         while opção != 'N':
             print('Continuar Lançando Receitas?')
@@ -40,12 +40,12 @@ while opção !=6:
                 print ('-' * 28, 'OK', '-' * 28)
                 sleep (1)
                 break  
-
         else:
             print('Saindo! Muito Obrigado!')
+            sleep (1)
             break
 #-------------------------------------------------------------------------------  
-
+    #Ofertas
     if opção == 2:
         sleep (1)
         descrição = str.upper(input('\nDigite o Nome da Receita: '))
@@ -54,7 +54,7 @@ while opção !=6:
         sleep(1)
         print('=' *60) 
         sleep(1)
-#-------------------------------------------------------------------------------
+
         #while Ofertas
         while opção != 'N':
             print('Continuar Lançando Receitas?')
@@ -68,12 +68,12 @@ while opção !=6:
                 print ('-' * 28, 'OK', '-' * 28)
                 sleep (1)
                 break  
-
         else:
             print('Saindo! Muito Obrigado!')
+            sleep (1)
             break
-
 #-------------------------------------------------------------------------------
+    #Ofertas Especiais
     if opção == 3:
         sleep (1)
         descrição = str.upper(input('\nDigite o Nome da Receita: '))
@@ -82,8 +82,8 @@ while opção !=6:
         sleep(1)
         print('=' *60) 
         sleep(1)
-#--------------------------------------------------------------------------------
-        #While Oferta Especial
+
+        #While Ofertas Especiais
         while opção != 'N':
             print('Continuar Lançando Receitas?')
             print('''
@@ -96,12 +96,12 @@ while opção !=6:
                 print ('-' * 28, 'OK', '-' * 28)
                 sleep (1)
                 break  
-
         else:
             print('Saindo! Muito Obrigado!')
+            sleep (1)
             break
-#--------------------------------------------------------------------------------        
-
+#--------------------------------------------------------------------------------  
+    #Missões       
     if opção == 4:
         sleep (1)
         descrição = str.upper(input('\nDigite o Nome da Receita: '))
@@ -111,7 +111,6 @@ while opção !=6:
         print('=' *60) 
         sleep(1)
 
-#--------------------------------------------------------------------------------
         #While Missões
         while opção != 'N':
             print('Continuar Lançando Receitas?')
@@ -125,12 +124,12 @@ while opção !=6:
                 print ('-' * 28, 'OK', '-' * 28)
                 sleep (1)
                 break  
-
         else:
             print('Saindo! Muito Obrigado!')
+            sleep (1)
             break
 #--------------------------------------------------------------------------------           
-
+    #Campanha
     if opção == 5:
         sleep (1)
         descrição = str.upper(input('\nDigite o Nome da Receita: '))
@@ -140,7 +139,6 @@ while opção !=6:
         print('=' *60) 
         sleep(1) 
 
-#--------------------------------------------------------------------------------
         #While Campanha
         while opção != 'N':
             print('Continuar Lançando Receitas?')
@@ -154,12 +152,12 @@ while opção !=6:
                 print ('-' * 28, 'OK', '-' * 28)
                 sleep (1)
                 break  
-
         else:
             print('Saindo! Muito Obrigado!')
+            sleep (1)
             break
 #--------------------------------------------------------------------------------
-
+    #Sair do Programa
     if opção == 6:
         print('Finalizando!\n')
         sleep (1)
@@ -167,5 +165,5 @@ while opção !=6:
         print('=' * 25, 'Receitas', '=' * 25)
 
     else:
-        print('Essa Opção é Inválida!')
-         
+        print('Essa Opção é Inválida!') 
+#--------------------------------------------------------------------------------       
