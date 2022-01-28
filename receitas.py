@@ -41,7 +41,8 @@ while opção !=6:
                 sleep (1)
                 break  
         else:
-            print('Saindo! Muito Obrigado!')
+            print('\nMuito Obrigado!\n')
+            print('=' * 25, 'Receitas', '=' * 25)
             sleep (1)
             break
 #-------------------------------------------------------------------------------  
@@ -69,7 +70,8 @@ while opção !=6:
                 sleep (1)
                 break  
         else:
-            print('Saindo! Muito Obrigado!')
+            print('\nMuito Obrigado!\n')
+            print('=' * 25, 'Receitas', '=' * 25)
             sleep (1)
             break
 #-------------------------------------------------------------------------------
@@ -97,7 +99,8 @@ while opção !=6:
                 sleep (1)
                 break  
         else:
-            print('Saindo! Muito Obrigado!')
+            print('\nMuito Obrigado!\n')
+            print('=' * 25, 'Receitas', '=' * 25)
             sleep (1)
             break
 #--------------------------------------------------------------------------------  
@@ -125,7 +128,8 @@ while opção !=6:
                 sleep (1)
                 break  
         else:
-            print('Saindo! Muito Obrigado!')
+            print('\nMuito Obrigado!\n')
+            print('=' * 25, 'Receitas', '=' * 25)
             sleep (1)
             break
 #--------------------------------------------------------------------------------           
@@ -153,17 +157,17 @@ while opção !=6:
                 sleep (1)
                 break  
         else:
-            print('Saindo! Muito Obrigado!')
+            print('\nMuito Obrigado!\n')
+            print('=' * 25, 'Receitas', '=' * 25)
             sleep (1)
             break
 #--------------------------------------------------------------------------------
-    #Sair do Programa
+    #Finalizar Programa
     if opção == 6:
         print('Finalizando!\n')
         sleep (1)
-        print('\nMuito Obrigado!')
-        print('=' * 25, 'Receitas', '=' * 25)
-
-    else:
-        print('Essa Opção é Inválida!') 
-#--------------------------------------------------------------------------------       
+else:
+    print('\nMuito Obrigado!\n') 
+    print('=' * 25, 'Receitas', '=' * 25)
+    sleep (1) 
+#-------------------------------------------------------------------------------       

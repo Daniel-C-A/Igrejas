@@ -41,7 +41,8 @@ while opção !=6:
                 sleep (1)
                 break  
         else:
-            print('Saindo! Muito Obrigado!')
+            print('\nMuito Obrigado!\n')
+            print('=' * 25, 'Receitas', '=' * 25)
             sleep (1)
             break
 #-------------------------------------------------------------------------------
@@ -49,7 +50,7 @@ while opção !=6:
     if opção == 2:
         sleep (1)
         descrição = str.upper(input('\nDigite o Nome da Despesa: '))
-        salarios = float(input('\nDigite o Valor da Oferta R$ '))
+        salarios = float(input('\nDigite o Valor do Salário R$ '))
         print(f'\nDescrição {descrição}\nValor R$ {salarios} \nLançada {data}')
         sleep(1)
         print('=' *60) 
@@ -69,7 +70,8 @@ while opção !=6:
                 sleep (1)
                 break  
         else:
-            print('Saindo! Muito Obrigado!')
+            print('\nMuito Obrigado!\n')
+            print('=' * 25, 'Receitas', '=' * 25)
             sleep (1)
             break
 #-------------------------------------------------------------------------------
@@ -77,7 +79,7 @@ while opção !=6:
     if opção == 3:
         sleep (1)
         descrição = str.upper(input('\nDigite o Nome da Despesa: '))
-        investimentos = float(input('\nDigite o Valor da Oferta Especial R$ '))
+        investimentos = float(input('\nDigite o Valor do Investimento R$ '))
         print(f'\nDescrição {descrição}\nValor R$ {investimentos} \nLançada {data}')
         sleep(1)
         print('=' *60) 
@@ -97,7 +99,8 @@ while opção !=6:
                 sleep (1)
                 break  
         else:
-            print('Saindo! Muito Obrigado!')
+            print('\nMuito Obrigado!\n')
+            print('=' * 25, 'Receitas', '=' * 25)
             sleep (1)
             break
 #-------------------------------------------------------------------------------
@@ -105,7 +108,7 @@ while opção !=6:
     if opção == 4:
         sleep (1)
         descrição = str.upper(input('\nDigite o Nome da Despesa: '))
-        fixas = float(input('\nDigite o Valor da Oferta de Missões R$ '))
+        fixas = float(input('\nDigite o Valor da Despesa Fixa R$ '))
         print(f'\nDescrição {descrição}\nValor R$ {fixas} \nLançada {data}')
         sleep(1)
         print('=' *60) 
@@ -125,7 +128,8 @@ while opção !=6:
                 sleep (1)
                 break  
         else:
-            print('Saindo! Muito Obrigado!')
+            print('\nMuito Obrigado!\n')
+            print('=' * 25, 'Receitas', '=' * 25)
             sleep (1)
             break
 #-------------------------------------------------------------------------------
@@ -133,7 +137,7 @@ while opção !=6:
     if opção == 5:
         sleep (1)
         descrição = str.upper(input('\nDigite o Nome da Despesa: '))
-        manutenções = float(input('\nDigite o Valor da Oferta de Campanha R$ '))
+        manutenções = float(input('\nDigite o Valor da Manutenção R$ '))
         print(f'\nDescrição {descrição}\nValor R$ {manutenções} \nLançada {data}')
         sleep(1)
         print('=' *60) 
@@ -153,7 +157,8 @@ while opção !=6:
                 sleep (1)
                 break  
         else:
-            print('Saindo! Muito Obrigado!')
+            print('\nMuito Obrigado!\n')
+            print('=' * 25, 'Receitas', '=' * 25)
             sleep (1)
             break
 #------------------------------------------------------------------------------- 
@@ -161,9 +166,8 @@ while opção !=6:
     if opção == 6:
         print('Finalizando!\n')
         sleep (1)
-        print('\nMuito Obrigado!')
-        print('=' * 25, 'Despesas', '=' * 25)
-        
-    else:
-        print('Opção Invalida! Quer Continuar? ') 
+else:
+    print('\nMuito Obrigado!\n') 
+    print('=' * 25, 'Receitas', '=' * 25)
+    sleep (1) 
 #-------------------------------------------------------------------------------
