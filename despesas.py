@@ -4,6 +4,8 @@ print('\nIgrejas')
 print('=' * 25, 'Despesas', '=' * 25)
 
 data = date.today()
+data_em_texto = data.strftime("%d/%m/%Y")
+
 opção = 0
 
 while opção !=6:
@@ -20,9 +22,9 @@ while opção !=6:
     #Despesas Pessoais
     if opção == 1:
         sleep (1)
-        descrição = str.upper(input('\nDigite o Nome da Despesa: '))   
+        descrição = str.upper(input('\nDescreva a Despesa: '))   
         despesa = float(input('\nDigite o Valor da Despesa R$ '))
-        print(f'\nDescrição {descrição}\nValor R$ {despesa} \nLançada {data}')
+        print(f'\nDespesa Pessoal: {descrição}\nValor R$ {despesa:,.2f} \nLançada {data_em_texto}')
         sleep (1)
         print('=' *60) 
         sleep(1) 
@@ -49,9 +51,9 @@ while opção !=6:
     #Despesas de Salários        
     if opção == 2:
         sleep (1)
-        descrição = str.upper(input('\nDigite o Nome da Despesa: '))
+        descrição = str.upper(input('\nPagamento para: '))
         salarios = float(input('\nDigite o Valor do Salário R$ '))
-        print(f'\nDescrição {descrição}\nValor R$ {salarios} \nLançada {data}')
+        print(f'\nPagamento de Salário: {descrição}\nValor R$ {salarios:,.2f} \nLançada {data_em_texto}')
         sleep(1)
         print('=' *60) 
         sleep(1) 
@@ -78,9 +80,9 @@ while opção !=6:
     #Despesas de Investimentos
     if opção == 3:
         sleep (1)
-        descrição = str.upper(input('\nDigite o Nome da Despesa: '))
+        descrição = str.upper(input('\nDescreva o Investimento: '))
         investimentos = float(input('\nDigite o Valor do Investimento R$ '))
-        print(f'\nDescrição {descrição}\nValor R$ {investimentos} \nLançada {data}')
+        print(f'\nInvestimento em: {descrição}\nValor R$ {investimentos:,.2f} \nLançada {data_em_texto}')
         sleep(1)
         print('=' *60) 
         sleep(1) 
@@ -107,9 +109,9 @@ while opção !=6:
     #Despesas Fixas
     if opção == 4:
         sleep (1)
-        descrição = str.upper(input('\nDigite o Nome da Despesa: '))
-        fixas = float(input('\nDigite o Valor da Despesa Fixa R$ '))
-        print(f'\nDescrição {descrição}\nValor R$ {fixas} \nLançada {data}')
+        descrição = str.upper(input('\nDescreva Despesa Fixa: '))
+        fixas = float(input('\nDigite o Valor R$ '))
+        print(f'\nPagamento da Despesa Fixa: {descrição}\nValor R$ {fixas:,.2f} \nLançada {data_em_texto}')
         sleep(1)
         print('=' *60) 
         sleep(1) 
@@ -136,9 +138,9 @@ while opção !=6:
     #Despesas de Manutenções
     if opção == 5:
         sleep (1)
-        descrição = str.upper(input('\nDigite o Nome da Despesa: '))
+        descrição = str.upper(input('\nDescreva a Manutenção: '))
         manutenções = float(input('\nDigite o Valor da Manutenção R$ '))
-        print(f'\nDescrição {descrição}\nValor R$ {manutenções} \nLançada {data}')
+        print(f'\nManutenção: {descrição}\nValor R$ {manutenções:,.2f} \nLançada {data_em_texto}')
         sleep(1)
         print('=' *60) 
         sleep(1) 

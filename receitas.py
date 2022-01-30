@@ -4,6 +4,8 @@ print('\nIgrejas')
 print('=' * 25, 'Receitas', '=' * 25)
 
 data = date.today()
+data_em_texto = data.strftime("%d/%m/%Y")
+
 opção = 0
 
 while opção !=6:
@@ -20,9 +22,9 @@ while opção !=6:
     #Dízimos
     if opção == 1:
         sleep (1)
-        descrição = str.upper(input('\nDigite o Nome da Receita: '))   
-        receita = float(input('\nDigite o Valor da Receita R$ '))
-        print(f'\nDescrição {descrição}\nValor R$ {receita} \nLançada {data}')
+        descrição = str.upper(input('\nNome do Dizimista: '))   
+        receita = float(input('\nDigite o Valor do Dízimo R$ '))
+        print(f'\nDízimo: {descrição}\nValor R$ {receita:,.2f} \nLançado {data_em_texto}')
         sleep (1)
         print('=' *60) 
         sleep(1)
@@ -49,9 +51,9 @@ while opção !=6:
     #Ofertas
     if opção == 2:
         sleep (1)
-        descrição = str.upper(input('\nDigite o Nome da Receita: '))
+        descrição = str.upper(input('\nDigite o Nome da Oferta: '))
         oferta = float(input('\nDigite o Valor da Oferta R$ '))
-        print(f'\nDescrição {descrição}\nValor R$ {oferta} \nLançada {data}')
+        print(f'\nOferta: {descrição}\nValor R$ {oferta:,.2f} \nLançada {data_em_texto}')
         sleep(1)
         print('=' *60) 
         sleep(1)
@@ -78,9 +80,9 @@ while opção !=6:
     #Ofertas Especiais
     if opção == 3:
         sleep (1)
-        descrição = str.upper(input('\nDigite o Nome da Receita: '))
+        descrição = str.upper(input('\nDescrição da Oferta: '))
         oferta = float(input('\nDigite o Valor da Oferta Especial R$ '))
-        print(f'\nDescrição {descrição}\nValor R$ {oferta} \nLançada {data}')
+        print(f'\nOferta Especial: {descrição}\nValor R$ {oferta:,.2f} \nLançada {data_em_texto}')
         sleep(1)
         print('=' *60) 
         sleep(1)
@@ -107,9 +109,9 @@ while opção !=6:
     #Missões       
     if opção == 4:
         sleep (1)
-        descrição = str.upper(input('\nDigite o Nome da Receita: '))
+        descrição = str.upper(input('\nDescreva a Oferta de Missões: '))
         missões = float(input('\nDigite o Valor da Oferta de Missões R$ '))
-        print(f'\nDescrição {descrição}\nValor R$ {missões} \nLançada {data}')
+        print(f'\nMissões: {descrição}\nValor R$ {missões:,.2f} \nLançada {data_em_texto}')
         sleep(1)
         print('=' *60) 
         sleep(1)
@@ -136,9 +138,9 @@ while opção !=6:
     #Campanha
     if opção == 5:
         sleep (1)
-        descrição = str.upper(input('\nDigite o Nome da Receita: '))
+        descrição = str.upper(input('\nDigite o Nome da Campanha: '))
         campanha = float(input('\nDigite o Valor da Oferta de Campanha R$ '))
-        print(f'\nDescrição {descrição}\nValor R$ {campanha} \nLançada {data}')
+        print(f'\nCampanha: {descrição}\nValor R$ {campanha:,.2f} \nLançada {data_em_texto}')
         sleep(1)
         print('=' *60) 
         sleep(1) 
