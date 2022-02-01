@@ -22,6 +22,7 @@ def lançar_despesas():
         [6] Sair! ''')
         sleep (1)
         opção = int(input('\nEscolha uma Opção Válida: '))
+
     #-----------------------------------------------------------------------
         #Despesas Pessoais
         if opção == 1:
@@ -177,11 +178,19 @@ def lançar_despesas():
         print('=' * 25, 'Receitas', '=' * 25)
         sleep (1) 
     #-----------------------------------------------------------------------
-lançar_despesas()
-
+    texto_despesas['text'] = opção
+    
 janela = Tk()
 janela.title('Igrejas')
-janela.geometry('200x200')
+janela.geometry('400x400')
 
+texto_orientação = Label(janela, text = 'Contábil Igrejas')
+texto_orientação.grid(column=0, row=0,)
+
+botao = Button(janela, text='Lançar Despesas', command= lançar_despesas)
+botao.grid(column=0, row=1,)
+
+texto_despesas = Label(janela, text='')
+texto_despesas.grid(column=0, row=2,)
 
 janela.mainloop()
